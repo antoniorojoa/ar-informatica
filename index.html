@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AR Informática - Tu técnico informático de confianza en Zahara de la Sierra. Reparación, formateo y puesta a punto de PC y smartphones. Trato cercano y profesional." />
+  <meta name="keywords" content="reparación PC, reparación móvil, formateo, Zahara de la Sierra, servicio técnico, AR Informática, smartphones, ordenadores" />
+  <meta name="author" content="AR Informática" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="AR Informática - Servicio Técnico de PC y Móviles" />
+  <meta property="og:description" content="Reparación, formateo y puesta a punto de ordenadores y smartphones en Zahara de la Sierra." />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta property="og:type" content="website" />
+  
+  <title>AR Informática | Servicio Técnico de PC y Móviles - Zahara de la Sierra</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  
+  <!-- AOS Animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==================== PRELOADER ==================== -->
+  <div id="preloader">
+    <img src="assets/logo.png" alt="AR Informática" class="preloader-logo" />
+    <div class="preloader-spinner"></div>
+  </div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">
+        <img src="assets/logo.png" alt="AR Informática Logo" />
+        <div class="brand-text">
+          <span class="brand-name">AR Informática</span>
+          <span class="brand-tagline">Servicio Técnico</span>
+        </div>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-3 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Sobre Mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proceso">Proceso</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ventajas">Ventajas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+        <a href="#contacto" class="btn btn-nav-cta">
+          <i class="bi bi-envelope-fill"></i> Contáctanos
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <img src="assets/hero-bg.png" alt="Background tecnológico" />
+    </div>
+    
+    <!-- Animated Particles -->
+    <div class="hero-particles" id="heroParticles"></div>
+    
+    <div class="container">
+      <div class="row align-items-center hero-content">
+        <!-- Left Content -->
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+          <img src="assets/logo.png" alt="AR Informática Logo" class="hero-logo" />
+          <h1 class="hero-title">
+            <span class="text-gradient-blue">AR</span> <span class="text-gradient-orange">Informática</span>
+          </h1>
+          <p class="hero-tagline">
+            Tu técnico informático de confianza para <strong>PC y Smartphones</strong> en Zahara de la Sierra
+          </p>
+          <div class="hero-buttons">
+            <a href="#servicios" class="btn-hero-primary">
+              <i class="bi bi-tools"></i> Ver Servicios
+            </a>
+            <a href="#contacto" class="btn-hero-secondary">
+              <i class="bi bi-chat-dots"></i> Pedir Presupuesto
+            </a>
+          </div>
+          
+          <div class="hero-stats">
+            <div class="hero-stat" data-aos="fade-up" data-aos-delay="200">
+              <div class="hero-stat-number">100%</div>
+              <div class="hero-stat-label">Dedicación personal</div>
+            </div>
+            <div class="hero-stat" data-aos="fade-up" data-aos-delay="400">
+              <div class="hero-stat-number">24h</div>
+              <div class="hero-stat-label">Respuesta rápida</div>
+            </div>
+            <div class="hero-stat" data-aos="fade-up" data-aos-delay="600">
+              <div class="hero-stat-number">0€</div>
+              <div class="hero-stat-label">Diagnóstico gratuito</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Visual -->
+        <div class="col-lg-6 hero-visual" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+          <div class="hero-3d-card">
+            <div class="floating-card fc-1">
+              <div class="card-icon"><i class="bi bi-laptop"></i></div>
+              <div class="card-text">
+                <h5>Reparación PC</h5>
+                <p>Hardware & Software</p>
+              </div>
+            </div>
+            <div class="floating-card fc-2">
+              <div class="card-icon"><i class="bi bi-phone"></i></div>
+              <div class="card-text">
+                <h5>Smartphones</h5>
+                <p>Todas las marcas</p>
+              </div>
+            </div>
+            <div class="floating-card fc-3">
+              <div class="card-icon"><i class="bi bi-speedometer2"></i></div>
+              <div class="card-text">
+                <h5>Optimización</h5>
+                <p>Puesta a punto</p>
+              </div>
+            </div>
+            <div class="floating-card fc-4">
+              <div class="card-icon"><i class="bi bi-hdd"></i></div>
+              <div class="card-text">
+                <h5>Datos</h5>
+                <p>Recuperación segura</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES SECTION ==================== -->
+  <section id="servicios">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="bi bi-tools"></i> Mis Servicios</span>
+        <h2 class="section-title">Soluciones <span class="highlight">profesionales</span> para tu tecnología</h2>
+        <p class="section-subtitle">Te ofrezco un servicio técnico completo y personalizado para mantener tus dispositivos en perfecto estado</p>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Service 1 -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <div class="service-icon si-blue"><i class="bi bi-arrow-repeat"></i></div>
+            <h4>Formateo de Equipos</h4>
+            <p>Reinstalación completa del sistema operativo. Dejo tu equipo como nuevo con el máximo rendimiento posible.</p>
+            <span class="service-tag">Windows</span>
+            <span class="service-tag">Linux</span>
+          </div>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <div class="service-icon si-orange"><i class="bi bi-pc-display"></i></div>
+            <h4>Reparación de PC</h4>
+            <p>Diagnóstico y reparación de averías de hardware y software en ordenadores de sobremesa y portátiles.</p>
+            <span class="service-tag">Portátiles</span>
+            <span class="service-tag">Sobremesa</span>
+          </div>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card">
+            <div class="service-icon si-green"><i class="bi bi-phone"></i></div>
+            <h4>Reparación de Móviles</h4>
+            <p>Cambio de pantallas, baterías, conectores y solución de problemas de software en smartphones.</p>
+            <span class="service-tag">iPhone</span>
+            <span class="service-tag">Android</span>
+          </div>
+        </div>
+        
+        <!-- Service 4 -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-card">
+            <div class="service-icon si-purple"><i class="bi bi-speedometer2"></i></div>
+            <h4>Puesta a Punto</h4>
+            <p>Optimización del rendimiento de tu equipo: limpieza, actualización de drivers y mejoras de velocidad.</p>
+            <span class="service-tag">Optimización</span>
+            <span class="service-tag">Limpieza</span>
+          </div>
+        </div>
+        
+
+        <!-- Service 6 -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <div class="service-icon si-cyan"><i class="bi bi-hdd-rack"></i></div>
+            <h4>Recuperación de Datos</h4>
+            <p>Recupero tus archivos importantes de discos duros dañados, memorias USB y tarjetas SD.</p>
+            <span class="service-tag">HDD</span>
+            <span class="service-tag">SSD</span>
+            <span class="service-tag">USB</span>
+          </div>
+        </div>
+        
+        <!-- Service 7 -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card">
+            <div class="service-icon si-teal"><i class="bi bi-wifi"></i></div>
+            <h4>Redes y Conectividad</h4>
+            <p>Configuración de redes WiFi, cableado de red, routers y solución de problemas de conectividad.</p>
+            <span class="service-tag">WiFi</span>
+            <span class="service-tag">Router</span>
+            <span class="service-tag">Red</span>
+          </div>
+        </div>
+        
+        <!-- Service 8 -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-card">
+            <div class="service-icon si-amber"><i class="bi bi-cpu"></i></div>
+            <h4>Ampliación de Hardware</h4>
+            <p>Upgrades de RAM, disco duro a SSD, tarjetas gráficas y cualquier componente para mejorar tu equipo.</p>
+            <span class="service-tag">RAM</span>
+            <span class="service-tag">SSD</span>
+            <span class="service-tag">GPU</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT SECTION ==================== -->
+  <section id="nosotros">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+          <div class="about-image-wrapper">
+            <img src="assets/about-img.png" alt="Técnico reparando equipo informático" />
+            <div class="about-experience-badge">
+              <span class="number"><i class="bi bi-rocket-takeoff-fill" style="font-size:1.8rem"></i></span>
+              <span class="label">Nuevo proyecto</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800">
+          <div class="about-content">
+            <span class="section-badge"><i class="bi bi-person-gear"></i> Sobre Mí</span>
+            <h2>Pasión por la tecnología a tu <span class="highlight">servicio</span></h2>
+            <p class="lead">
+              Soy el fundador de <strong>AR Informática</strong>, un proyecto que nace de mi pasión por la tecnología y las ganas de emprender en Zahara de la Sierra. Cuento con sólidos conocimientos en reparación de equipos informáticos y smartphones, y he decidido dar el paso para ofrecer un servicio técnico cercano, profesional y de confianza en nuestra zona.
+            </p>
+            <p class="lead">
+              Mi objetivo es claro: que tengas un técnico de referencia al que acudir con total tranquilidad, sabiendo que tu equipo está en buenas manos y que siempre recibirás un trato honesto y personalizado.
+            </p>
+            <ul class="about-features">
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Diagnóstico gratuito y presupuesto sin compromiso</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Trato directo y personal — sin intermediarios</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Reparaciones con piezas de calidad y garantía</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Servicio a domicilio disponible en la comarca</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Formación continua para estar siempre al día</span>
+              </li>
+            </ul>
+            <a href="#contacto" class="btn-hero-primary">
+              <i class="bi bi-chat-dots"></i> Contáctame
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROCESS SECTION ==================== -->
+  <section id="proceso">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="bi bi-diagram-3"></i> Cómo Trabajo</span>
+        <h2 class="section-title">Un proceso <span class="highlight">sencillo</span> y transparente</h2>
+        <p class="section-subtitle">Desde el primer contacto hasta la entrega, te acompaño en cada paso</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="process-step">
+            <div class="process-connector d-none d-lg-block"></div>
+            <div class="process-number pn-1">01</div>
+            <h5>Contacto</h5>
+            <p>Cuéntame tu problema por email o Instagram y te responderé lo antes posible.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="process-step">
+            <div class="process-connector d-none d-lg-block"></div>
+            <div class="process-number pn-2">02</div>
+            <h5>Diagnóstico</h5>
+            <p>Analizo tu dispositivo en detalle para identificar la avería y te doy un presupuesto sin compromiso.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="process-step">
+            <div class="process-connector d-none d-lg-block"></div>
+            <div class="process-number pn-3">03</div>
+            <h5>Reparación</h5>
+            <p>Procedo a la reparación con componentes de calidad, dedicación y atención al detalle.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="process-step">
+            <div class="process-number pn-4">04</div>
+            <h5>Entrega</h5>
+            <p>Te devuelvo tu dispositivo funcionando como nuevo, con garantía de servicio incluida.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ADVANTAGES SECTION ==================== -->
+  <section id="ventajas">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="bi bi-star-fill"></i> ¿Por qué elegirme?</span>
+        <h2 class="section-title">Ventajas de confiar en <span class="highlight">AR Informática</span></h2>
+        <p class="section-subtitle">Me diferencio por la calidad del servicio, el trato directo y el compromiso personal con cada cliente</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="advantage-card">
+            <div class="advantage-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+            <h5>Agilidad</h5>
+            <p>Al ser un servicio directo, sin burocracia ni esperas. Tu dispositivo es mi prioridad.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="advantage-card">
+            <div class="advantage-icon"><i class="bi bi-wallet2"></i></div>
+            <h5>Precios Honestos</h5>
+            <p>Sin costes ocultos ni sorpresas. Presupuesto gratuito y sin compromiso antes de cualquier reparación.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="advantage-card">
+            <div class="advantage-icon"><i class="bi bi-patch-check-fill"></i></div>
+            <h5>Garantía</h5>
+            <p>Todos mis trabajos incluyen garantía de servicio. Utilizo piezas de calidad para cada reparación.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="advantage-card">
+            <div class="advantage-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <h5>Trato Personal</h5>
+            <p>Hablo contigo directamente, sin intermediarios. Servicio local en Zahara de la Sierra con opción a domicilio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section id="contacto">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="bi bi-envelope-fill"></i> Contacto</span>
+        <h2 class="section-title">¿Necesitas <span class="highlight">ayuda</span>? Escríbeme</h2>
+        <p class="section-subtitle">Estoy aquí para resolver todas tus dudas y ayudarte con tus dispositivos</p>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Contact Info -->
+        <div class="col-lg-5" data-aos="fade-right" data-aos-duration="800">
+          <div class="contact-info-card">
+            <h3>Información de contacto</h3>
+            <p class="lead">No dudes en ponerte en contacto conmigo por cualquiera de estos medios.</p>
+            
+            <div class="contact-item">
+              <div class="contact-item-icon ci-blue"><i class="bi bi-envelope-fill"></i></div>
+              <div class="contact-item-text">
+                <h6>Email</h6>
+                <p><a href="mailto:tecnofix.zh@gmail.com">tecnofix.zh@gmail.com</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-item-icon ci-pink"><i class="bi bi-instagram"></i></div>
+              <div class="contact-item-text">
+                <h6>Instagram</h6>
+                <p><a href="https://www.instagram.com/ar.informatica.zh" target="_blank" rel="noopener noreferrer">@ar.informatica.zh</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-item-icon ci-green"><i class="bi bi-geo-alt-fill"></i></div>
+              <div class="contact-item-text">
+                <h6>Ubicación</h6>
+                <p>Zahara de la Sierra, Cádiz</p>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <a href="https://www.instagram.com/ar.informatica.zh" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="mailto:tecnofix.zh@gmail.com" class="social-link" aria-label="Email">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800">
+          <div class="contact-form-card">
+            <h3>Envíame un mensaje</h3>
+            <p class="lead">Rellena el formulario y te responderé lo antes posible.</p>
+            
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="contactName" placeholder="Tu nombre" required />
+                    <label for="contactName">Tu nombre *</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="contactEmail" placeholder="Tu email" required />
+                    <label for="contactEmail">Tu email *</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="tel" class="form-control" id="contactPhone" placeholder="Tu teléfono" />
+                    <label for="contactPhone">Tu teléfono</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <select class="form-select" id="contactService" required>
+                      <option value="" disabled selected>Selecciona un servicio</option>
+                      <option value="Formateo de Equipos">Formateo de Equipos</option>
+                      <option value="Reparación de PC">Reparación de PC</option>
+                      <option value="Reparación de Móviles">Reparación de Móviles</option>
+                      <option value="Puesta a Punto">Puesta a Punto</option>
+                      <option value="Recuperación de Datos">Recuperación de Datos</option>
+                      <option value="Redes y Conectividad">Redes y Conectividad</option>
+                      <option value="Ampliación de Hardware">Ampliación de Hardware</option>
+                      <option value="Otro">Otro</option>
+                    </select>
+                    <label for="contactService">Servicio *</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control" id="contactMessage" placeholder="Describe tu problema" style="height: 140px" required></textarea>
+                    <label for="contactMessage">Describe tu problema *</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-submit" id="submitBtn">
+                    <i class="bi bi-send-fill"></i> Enviar Mensaje
+                  </button>
+                </div>
+              </div>
+            </form>
+            
+            <div class="form-message" id="formMessage"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <!-- Footer Brand -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <img src="assets/logo.png" alt="AR Informática" />
+            <h5>AR Informática</h5>
+            <p>Tu técnico informático de confianza en Zahara de la Sierra. Reparación de PC y smartphones con trato cercano y profesional.</p>
+          </div>
+        </div>
+        
+        <!-- Footer Links -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="footer-title">Navegación</h6>
+          <ul class="footer-links">
+            <li><a href="#hero"><i class="bi bi-chevron-right"></i> Inicio</a></li>
+            <li><a href="#servicios"><i class="bi bi-chevron-right"></i> Servicios</a></li>
+            <li><a href="#nosotros"><i class="bi bi-chevron-right"></i> Sobre Mí</a></li>
+            <li><a href="#proceso"><i class="bi bi-chevron-right"></i> Proceso</a></li>
+            <li><a href="#contacto"><i class="bi bi-chevron-right"></i> Contacto</a></li>
+          </ul>
+        </div>
+        
+        <!-- Footer Services -->
+        <div class="col-lg-3 col-md-6">
+          <h6 class="footer-title">Servicios</h6>
+          <ul class="footer-links">
+            <li><a href="#servicios">Formateo de Equipos</a></li>
+            <li><a href="#servicios">Reparación de PC</a></li>
+            <li><a href="#servicios">Reparación de Móviles</a></li>
+            <li><a href="#servicios">Recuperación de Datos</a></li>
+          </ul>
+        </div>
+        
+        <!-- Footer Contact -->
+        <div class="col-lg-3 col-md-6">
+          <h6 class="footer-title">Contacto</h6>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>Zahara de la Sierra, Cádiz</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:tecnofix.zh@gmail.com" style="color: var(--gray-400);">tecnofix.zh@gmail.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-instagram"></i>
+            <a href="https://www.instagram.com/ar.informatica.zh" target="_blank" rel="noopener noreferrer" style="color: var(--gray-400);">@ar.informatica.zh</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 AR Informática. Todos los derechos reservados. Hecho con <span class="heart">♥</span> en Zahara de la Sierra</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== BACK TO TOP ==================== -->
+  <button id="backToTop" aria-label="Volver arriba">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <!-- Bootstrap 5.3 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animations -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
