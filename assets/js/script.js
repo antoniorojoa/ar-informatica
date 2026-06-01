@@ -53,8 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
   handleScroll(); // Initial check
 
   // ---------- Back to Top ----------
-  backToTop.addEventListener('click', () => {
+  backToTop.addEventListener('click', (e) => {
+    e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Fallback for Safari and older browsers
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   });
 
   // ---------- Active Navigation Link ----------
@@ -160,37 +164,45 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
     
-    // Simulate sending (build mailto link)
     submitBtn.disabled = true;
     submitBtn.innerHTML = '<i class="bi bi-hourglass-split"></i> Enviando...';
     
-    // Build mailto body
     const phone = document.getElementById('contactPhone').value.trim();
-    const subject = encodeURIComponent(`Consulta: ${service} - ${name}`);
-    const body = encodeURIComponent(
-      `Nombre: ${name}\n` +
-      `Email: ${email}\n` +
-      `Teléfono: ${phone || 'No proporcionado'}\n` +
-      `Servicio: ${service}\n\n` +
-      `Mensaje:\n${message}`
-    );
     
-    const mailtoLink = `mailto:tecnofix.zh@gmail.com?subject=${subject}&body=${body}`;
-    
-    // Simulate delay for UX
-    setTimeout(() => {
-      // Open mail client
-      window.location.href = mailtoLink;
-      
-      showFormMessage(
-        '¡Gracias por tu mensaje! Se abrirá tu cliente de correo para enviar la consulta. Si no se abre, envía un email directamente a tecnofix.zh@gmail.com',
-        'success'
-      );
-      
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = '<i class="bi bi-send-fill"></i> Enviar Mensaje';
-      contactForm.reset();
-    }, 1200);
+    fetch('https://formsubmit.co/ajax/tecnofix.zh@gmail.com', {
+        method: 'POST',
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            name: name,
+            email: email,
+            phone: phone || 'No proporcionado',
+            service: service,
+            message: message,
+            _subject: `Nueva consulta web: ${service} - ${name}`,
+            _template: 'box' // Uses a cleaner email template
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        showFormMessage(
+            '¡Gracias por tu mensaje! Me pondré en contacto contigo lo antes posible.',
+            'success'
+        );
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="bi bi-send-fill"></i> Enviar Mensaje';
+        contactForm.reset();
+    })
+    .catch(error => {
+        showFormMessage(
+            'Hubo un error al enviar el mensaje. Por favor, inténtalo más tarde o escríbeme directamente a tecnofix.zh@gmail.com',
+            'error'
+        );
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="bi bi-send-fill"></i> Enviar Mensaje';
+    });
   });
 
   function showFormMessage(msg, type) {

@@ -1,6 +1,6 @@
 # AR Informática
 
-![AR Informática Logo](assets/logo.png)
+![AR Informática Logo](assets/img/logo.png)
 
 Este repositorio contiene el código fuente para el portal web de **AR Informática**, un servicio técnico de reparación de ordenadores (PC) y dispositivos móviles (smartphones) situado en **Zahara de la Sierra**.
 
@@ -29,13 +29,16 @@ La web está diseñada para un **emprendedor individual** que ofrece servicios d
 ```
 /
 ├── index.html       # Página principal con toda la estructura y secciones
-├── styles.css       # Estilos personalizados, variables y animaciones
-├── script.js        # Lógica de JavaScript (efectos, formulario, preloader)
 ├── README.md        # Este archivo
-└── assets/          # Directorio para imágenes y logos
-    ├── logo.png
-    ├── hero-bg.png
-    └── about-img.png
+└── assets/          # Recursos estáticos
+    ├── css/
+    │   └── styles.css       # Estilos personalizados, variables y animaciones
+    ├── js/
+    │   └── script.js        # Lógica de JavaScript (efectos, formulario, preloader)
+    └── img/                 # Directorio para imágenes y logos
+        ├── logo.png
+        ├── hero-bg.png
+        └── about-img.png
 ```
 
 ## 🌐 Secciones del Sitio
