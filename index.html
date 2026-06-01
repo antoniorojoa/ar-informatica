@@ -449,29 +449,34 @@
             <h3>Envíame un mensaje</h3>
             <p class="lead">Rellena el formulario y te responderé lo antes posible.</p>
             
-            <form id="contactForm" novalidate>
+            <form action="https://formsubmit.co/tecnofix.zh@gmail.com" method="POST" id="contactForm">
+              <!-- FormSubmit config -->
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="box">
+              <input type="hidden" name="_subject" value="Nueva consulta web AR Informática">
+              
               <div class="row g-3">
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input type="text" class="form-control" id="contactName" placeholder="Tu nombre" required />
+                    <input type="text" name="Nombre" class="form-control" id="contactName" placeholder="Tu nombre" required />
                     <label for="contactName">Tu nombre *</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input type="email" class="form-control" id="contactEmail" placeholder="Tu email" required />
+                    <input type="email" name="Email" class="form-control" id="contactEmail" placeholder="Tu email" required />
                     <label for="contactEmail">Tu email *</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input type="tel" class="form-control" id="contactPhone" placeholder="Tu teléfono" />
+                    <input type="tel" name="Telefono" class="form-control" id="contactPhone" placeholder="Tu teléfono" />
                     <label for="contactPhone">Tu teléfono</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <select class="form-select" id="contactService" required>
+                    <select name="Servicio" class="form-select" id="contactService" required>
                       <option value="" disabled selected>Selecciona un servicio</option>
                       <option value="Formateo de Equipos">Formateo de Equipos</option>
                       <option value="Reparación de PC">Reparación de PC</option>
@@ -487,7 +492,7 @@
                 </div>
                 <div class="col-12">
                   <div class="form-floating">
-                    <textarea class="form-control" id="contactMessage" placeholder="Describe tu problema" style="height: 140px" required></textarea>
+                    <textarea name="Mensaje" class="form-control" id="contactMessage" placeholder="Describe tu problema" style="height: 140px" required></textarea>
                     <label for="contactMessage">Describe tu problema *</label>
                   </div>
                 </div>
